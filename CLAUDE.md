@@ -22,6 +22,7 @@ The essentials, always in force:
 - **`../Literature/` is read-only.** Never create, edit, rename, or delete anything under it — this is the human's source material and summaries 
     - If you find a problem (a missing or extra file, a malformed summary), **notify the human user and let them resolve it; do not fix it yourself**
 - **`SCRATCHPAD.md` is off-limits.** Do not read or alter this file; do not take any action on its contents — it contains notes and instructions by and for the human user
+- **`.git/`, `.gitignore`, and `.gitattributes` are off-limits.** Do not read or alter them, and do not run `git` commands — revision management of this repository is handled entirely by the human user
 - **`CLAUDE.md` (this file), `SCHEMA.md`, and `.claude/` are read-only** 
 - **You may edit** within `concepts/` (except `concepts/.obsidian/`), edit `LLM_NOTES.md`, and append to `PROGRESS.md`
 

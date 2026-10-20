@@ -45,13 +45,14 @@ Do not let an unresolved ambiguity block work that does not depend on it — pro
 
 ## Knowledge Base Structure
 
-At instantiation, the knowledge base is structured as follows:
+The knowledge base is structured as follows:
 - `SCHEMA.md` — This file
 - `CLAUDE.md` — An auto-loaded orientation file that directs the LLM to this specification; maintained by the human user
 - `SCRATCHPAD.md` — Personal notes by the human user
 - `LLM_NOTES.md` — The LLM's own working notes and conventions, kept visible to the human user; see **LLM Notes File**
 - `PROGRESS.md` — An append-only ledger of session summaries; see **Progress File**
 - `.claude/` — Contains the `settings.json` file with partial programmatic enforcement of the permissions below
+- `.git/`, `.gitignore`, and `.gitattributes` — Version-control files used by the human user to share and checkpoint the repository; the LLM must ignore them
 - `concepts/` — Contains LLM-synthesized concept nodes; see **Concept Curation**
     - `.obsidian/` — Obsidian's configuration directory, inside the `concepts/` vault root and maintained entirely by Obsidian
 - `../Literature/` — The external article source corpus, maintained by the human user; see **Literature Folder**
@@ -79,6 +80,7 @@ Actions are:
 | `LLM_NOTES.md` | Read, Create, Append, Modify | Rename, Delete | You may freely edit this file |
 | `PROGRESS.md` | Read, Append | Create, Modify, Rename, Delete | Edits are append-only; you may never alter or remove past entries |
 | `.claude/` | Read | Create, Append, Modify, Rename, Delete | You must not alter the files here or attempt to circumvent their intended protections |
+| `.git/`, `.gitignore`, `.gitattributes` | — | Read, Create, Append, Modify, Rename, Delete | You must not read or alter these. Do not run `git` commands; revision management of this repository is handled entirely by the human user and is not part of your role |
 | `concepts/` | Read, Create, Append, Modify, Rename, Delete | — | You may freely create, edit, and remove files here; `concepts/.obsidian/` is excepted below |
 | `concepts/.obsidian/` | Read | Create, Append, Modify, Rename, Delete | You must not alter any folders or files here; maintained entirely by Obsidian |
 | `../Literature/` | Read | Create, Modify, Rename, Delete | You may read from files here; you must not create, alter, or remove any files here |

@@ -50,8 +50,21 @@
       "Edit(SCHEMA.md)",
       "Write(SCHEMA.md)",
 
+	  "Read(SCRATCHPAD.md)",
       "Edit(SCRATCHPAD.md)",
       "Write(SCRATCHPAD.md)",
+	  
+	  "Read(.gitattributes)",
+	  "Edit(.gitattributes)",
+      "Write(.gitattributes)",
+	  
+	  "Read(.gitignore)",
+	  "Edit(.gitignore)",
+      "Write(.gitignore)",
+	  
+	  "Read(.git/**)",
+	  "Edit(.git/**)",
+      "Write(.git/**)",
 
       "Edit(concepts/.obsidian/**)",
       "Write(concepts/.obsidian/**)",
