@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+
+  "_README": [
+    "Permission policy for Literature_KB, enforcing the file rules in SCHEMA.md.",
+    "Claude may add/rename/edit/delete in concepts/ (not concepts/.obsidian/), edit LLM_NOTES.md,", 
+    "and append to PROGRESS.md. Everything else is read-only. Only a human can change this file.",
+    "",
+    "ENFORCED: the Edit/Write/NotebookEdit/Read path rules, and the 'ask' prompts. Both were",
+    "tested and confirmed working on 2026/08/20.",
+    "",
+    "ADVISORY ONLY: the Bash(...) deny list. It matches command names and prefixes, so 'unlink'",
+    "slips past a blocked 'rm', and redirection ('cat x > articles/y') is invisible to it.",
+    "Do not mistake it for a boundary.",
+    "",
+    "THE GAP: shell commands bypass the path rules entirely, and nothing available on this",
+    "machine closes it. MANUAL MODE is the mitigation - every shell command is shown to the",
+    "human before it runs. disableAutoMode below enforces that instead of trusting memory.",
+    "",
+    "rm and mv are 'ask' rather than 'deny' because SCHEMA.md grants delete/rename rights in",
+    "concepts/, and denying rm only hid deletions behind unlink. A prompt makes them visible.",
+    "",
+    "DO NOT RE-ADD - both were tried on 2026/08/20 and removed. A sandbox block: the Windows",
+    "sandbox is unavailable on this machine, and with failIfUnavailable=true it stopped Claude",
+    "Code from starting at all. Custom autoMode.hard_deny rules: they blocked nothing in",
+    "testing, and they bind only while auto mode is active, which is now disabled here.",
+    "",
+    "Shell history is denied below: no use in this work, and it often holds pasted credentials.",
+    "",
+    "The denies for other directories MUST use absolute paths. The relative form (e.g.,",
+    "../Literature/**) only prompts - it does not block. Verified 2026/08/27."
+  ],
+
+  "permissions": {
+    "defaultMode": "default",
+    "disableAutoMode": "disable",
+
+    "deny": [
+      "Edit(C:/Users/rugbug/OneDrive - Nanyang Technological University/Literature/**)",
+      "Write(C:/Users/rugbug/OneDrive - Nanyang Technological University/Literature/**)",
+      "NotebookEdit(C:/Users/rugbug/OneDrive - Nanyang Technological University/Literature/**)",
+
+      "Edit(C:/Users/rugbug/OneDrive - Nanyang Technological University/Article_Summarizer/**)",
+      "Write(C:/Users/rugbug/OneDrive - Nanyang Technological University/Article_Summarizer/**)",
+      "NotebookEdit(C:/Users/rugbug/OneDrive - Nanyang Technological University/Article_Summarizer/**)",
+
+      "Edit(CLAUDE.md)",
+      "Write(CLAUDE.md)",
+
+      "Edit(SCHEMA.md)",
+      "Write(SCHEMA.md)",
+
+      "Edit(SCRATCHPAD.md)",
+      "Write(SCRATCHPAD.md)",
+
+      "Edit(concepts/.obsidian/**)",
+      "Write(concepts/.obsidian/**)",
+
+      "Edit(.claude/**)",
+      "Write(.claude/**)",
+
+      "Read(//C:/Users/rugbug/AppData/Roaming/Microsoft/Windows/PowerShell/PSReadLine/**)",
+      "Read(//C:/Users/rugbug/.bash_history)",
+      "Read(//C:/Users/rugbug/.zsh_history)",
+
+      "Bash(rmdir *)",
+      "Bash(sed -i *)",
+      "Bash(truncate *)",
+      "Bash(dd *)",
+      "Bash(chmod *)",
+      "Bash(chown *)"
+    ],
+
+    "ask": [
+      "Edit(PROGRESS.md)",
+      "Write(PROGRESS.md)",
+      "Bash(rm *)",
+      "Bash(mv *)"
+    ]
+  }
+}

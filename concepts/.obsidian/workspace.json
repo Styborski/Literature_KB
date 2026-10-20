@@ -1,0 +1,226 @@
+{
+  "main": {
+    "id": "283a3cc16e98ebd8",
+    "type": "split",
+    "children": [
+      {
+        "id": "48c3da0f7852f542",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "df47b3e1c949a79b",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5c0b1e2c3a58f354",
+    "type": "split",
+    "children": [
+      {
+        "id": "04dd027164ab0e37",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "81a7edb2f4666dd3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5b5b92b387042f06",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "cec45a99bacbb448",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "0bde7defce6b0fe1",
+    "type": "split",
+    "children": [
+      {
+        "id": "698c3cb640243495",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d86bba4143d27e04",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "3988f23c1223e1fb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "2dd300d121e2d432",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "6ea65dbb8926eb36",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "fff97bbd809405cb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "df47b3e1c949a79b",
+  "lastOpenFiles": [
+    "aes_for_generative_models.md",
+    "diffusion_guidance.md",
+    "membership_inference_attacks.md",
+    "joint_embedding_predictive_architecture.md",
+    "diffusion_models.md",
+    "non_contrastive_ssl.md",
+    "diffusion_model_personalization.md",
+    "diffusion_model_personalization.md.tmp.26448.d481018f7ca6",
+    "image_augmentation_methods.md",
+    "langevin_dynamics.md",
+    "langevin_dynamics.md.tmp.17976.6a175343b0b9",
+    "generated_image_detection.md",
+    "generated_image_detection.md.tmp.8924.0e08ea6713ce",
+    "generative_adversarial_networks.md",
+    "diffusion_based_image_editing.md",
+    "normalizing_flows.md",
+    "variational_autoencoders.md",
+    "energy_based_models.md",
+    "optimal_transport.md",
+    "adversarial_examples.md",
+    "generative_models.md",
+    "score_matching.md",
+    "generated_image_evaluation_metrics.md",
+    "diffusion_samplers.md",
+    "diffusion_based_image_editing.md.tmp.25004.dd6c5e1b1edd",
+    "latent_diffusion_models.md.tmp.25004.b39e04ee4028",
+    "latent_diffusion_models.md.tmp.25004.388bc3934cb7",
+    "diffusion_model_personalization.md.tmp.25004.fce4c949565f",
+    "generative_adversarial_networks.md.tmp.25004.6a6960e5e789",
+    "defenses_against_aes_for_discriminative_models.md.tmp.25004.8c2a6b0eccfd",
+    "latent_diffusion_models.md",
+    "generated_image_detection.md.tmp.25004.be2ede3bf2cf",
+    "defenses_against_aes_for_generative_models.md",
+    "self_supervised_learning.md",
+    "diffusion_geometry.md",
+    "diffusion_model_semantic_spaces.md"
+  ]
+}

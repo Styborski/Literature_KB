@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/rugbug/OneDrive - Nanyang Technological University/Literature/**)",
+      "Bash(ls -1d *[Cc]arlini*)",
+      "Bash(ls -1d *[Ee]xtract*)",
+      "Bash(ls -1d *[Ss]omepalli*)",
+      "Bash(ls -1d *[Ff]eldman*)"
+    ]
+  }
+}
